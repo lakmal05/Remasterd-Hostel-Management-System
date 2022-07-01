@@ -13,8 +13,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import lk.ijse.HostelManagementSystem.business.BOFactory;
-import lk.ijse.HostelManagementSystem.business.custom.ReservationBO;
+import lk.ijse.HostelManagementSystem.BO.BOFactory;
+import lk.ijse.HostelManagementSystem.BO.custom.ReservationBO;
 import lk.ijse.HostelManagementSystem.dto.ReservationDTO;
 import lk.ijse.HostelManagementSystem.view.tm.CustomTM;
 

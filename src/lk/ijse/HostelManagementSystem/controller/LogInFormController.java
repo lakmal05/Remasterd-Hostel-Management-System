@@ -12,15 +12,13 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import lk.ijse.HostelManagementSystem.business.BOFactory;
-import lk.ijse.HostelManagementSystem.business.SuperBO;
-import lk.ijse.HostelManagementSystem.business.custom.UserBO;
+import lk.ijse.HostelManagementSystem.BO.BOFactory;
+import lk.ijse.HostelManagementSystem.BO.custom.UserBO;
 import lk.ijse.HostelManagementSystem.dto.UserDTO;
 import org.controlsfx.control.Notifications;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Observable;
 
 public class LogInFormController {
 
