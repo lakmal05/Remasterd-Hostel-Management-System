@@ -89,7 +89,7 @@ public class ManageRoomFormController {
         loadDateAndTime();
         initialUI();
 
-        //----------------------Validation----------------------------------
+
         Pattern roomTypeIdPattern = Pattern.compile("^(RM-)[0-9]{4}$");
         Pattern roomTypePattern = Pattern.compile("^(Non-AC|Non-AC/Food|AC|AC/Food)$");
         Pattern keyMoneyPattern = Pattern.compile("^[1-9][0-9]*(.[0-9]{1,2})?$");
