@@ -174,7 +174,7 @@ public class StudentFormController {
                   }
 
               } catch (Exception exception) {
-                  new Alert(Alert.AlertType.ERROR, "Failed to delete the customer " + student_id).show();
+                  new Alert(Alert.AlertType.ERROR, "Something went Wrong Try Again " + student_id).show();
                   exception.printStackTrace();
               }
 
