@@ -1,7 +1,7 @@
-package lk.ijse.HostelManagementSystem.repository.custom.impl;
+package lk.ijse.HostelManagementSystem.DAO.custom.impl;
 
 import lk.ijse.HostelManagementSystem.entity.Reservation;
-import lk.ijse.HostelManagementSystem.repository.custom.ReservationDAO;
+import lk.ijse.HostelManagementSystem.DAO.custom.ReservationDAO;
 import lk.ijse.HostelManagementSystem.util.FactoryConfiguration;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

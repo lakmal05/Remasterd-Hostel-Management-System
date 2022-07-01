@@ -1,4 +1,4 @@
-package lk.ijse.HostelManagementSystem.repository;
+package lk.ijse.HostelManagementSystem.DAO;
 
 import lk.ijse.HostelManagementSystem.entity.SuperEntity;
 

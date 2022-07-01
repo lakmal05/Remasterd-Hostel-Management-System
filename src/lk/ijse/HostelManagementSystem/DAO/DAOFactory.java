@@ -1,6 +1,6 @@
-package lk.ijse.HostelManagementSystem.repository;
+package lk.ijse.HostelManagementSystem.DAO;
 
-import lk.ijse.HostelManagementSystem.repository.custom.impl.*;
+import lk.ijse.HostelManagementSystem.DAO.custom.impl.*;
 
 public class DAOFactory {
     private static DAOFactory daoFactory;

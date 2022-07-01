@@ -1,18 +1,18 @@
-package lk.ijse.HostelManagementSystem.repository.custom.impl;
+package lk.ijse.HostelManagementSystem.DAO.custom.impl;
 
-import lk.ijse.HostelManagementSystem.entity.Student;
-import lk.ijse.HostelManagementSystem.repository.custom.StudentDAO;
+import lk.ijse.HostelManagementSystem.entity.User;
+import lk.ijse.HostelManagementSystem.DAO.custom.UserDAO;
 import lk.ijse.HostelManagementSystem.util.FactoryConfiguration;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class StudentDAOImpl implements StudentDAO {
+public class UserDAOImpl implements UserDAO {
+
     @Override
-    public boolean add(Student entity) throws Exception {
+    public boolean add(User entity) throws Exception {
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
 
@@ -24,7 +24,7 @@ public class StudentDAOImpl implements StudentDAO {
     }
 
     @Override
-    public boolean update(Student entity) throws Exception {
+    public boolean update(User entity) throws Exception {
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
 
@@ -36,12 +36,12 @@ public class StudentDAOImpl implements StudentDAO {
     }
 
     @Override
-    public boolean delete(String id) throws Exception {
+    public boolean delete(String username) throws Exception {
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
 
-        Student student = session.load(Student.class, id);
-        session.delete(student);
+        User user = session.load(User.class, username);
+        session.delete(user);
 
         transaction.commit();
         session.close();
@@ -49,47 +49,48 @@ public class StudentDAOImpl implements StudentDAO {
     }
 
     @Override
-    public boolean exist(String id) throws Exception {
+    public boolean exist(String email) throws Exception {
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
 
-        String hql = "SELECT student_id FROM Student WHERE student_id = : s_id ";
+        String hql = "SELECT email FROM User WHERE email = : email_address ";
         Query query = session.createQuery(hql);
-        query.setParameter("s_id",id);
-        List<String> student_id = query.list();
+        query.setParameter("email_address",email);
+        List<String> emailAddressList = query.list();
 
         transaction.commit();
         session.close();
 
-        return (student_id.size()>0) ? true : false;
+        return (emailAddressList.size()>0) ? true : false;
     }
 
     @Override
-    public List<Student> find(String id) throws Exception {
+    public List<User> find(String username) throws Exception {
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
 
-        String hql = "FROM Student WHERE student_id = : s_id ";
+        String hql = "FROM User WHERE userName = : user_name ";
         Query query = session.createQuery(hql);
-        query.setParameter("s_id",id);
-        List<Student> student_id = query.list();
+        query.setParameter("user_name",username);
+        List<User> userList = query.list();
 
         transaction.commit();
         session.close();
-        return student_id;
+        return userList;
     }
 
     @Override
-    public List<Student> findAll() throws Exception {
+    public List<User> findAll() throws Exception {
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction transaction = session.beginTransaction();
 
-        String hql ="FROM Student";
+        String hql ="FROM User ";
         Query query = session.createQuery(hql);
-        List<Student> studentList = query.list();
+        List<User> userList = query.list();
 
         transaction.commit();
         session.close();
-        return studentList;
+        return userList;
     }
+
 }

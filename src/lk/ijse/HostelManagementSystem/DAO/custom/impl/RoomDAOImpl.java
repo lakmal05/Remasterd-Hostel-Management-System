@@ -1,8 +1,7 @@
-package lk.ijse.HostelManagementSystem.repository.custom.impl;
+package lk.ijse.HostelManagementSystem.DAO.custom.impl;
 
 import lk.ijse.HostelManagementSystem.entity.Room;
-import lk.ijse.HostelManagementSystem.entity.Student;
-import lk.ijse.HostelManagementSystem.repository.custom.RoomDAO;
+import lk.ijse.HostelManagementSystem.DAO.custom.RoomDAO;
 import lk.ijse.HostelManagementSystem.util.FactoryConfiguration;
 import org.hibernate.Session;
 import org.hibernate.Transaction;

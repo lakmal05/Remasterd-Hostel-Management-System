@@ -7,10 +7,10 @@ import lk.ijse.HostelManagementSystem.dto.StudentDTO;
 import lk.ijse.HostelManagementSystem.entity.Reservation;
 import lk.ijse.HostelManagementSystem.entity.Room;
 import lk.ijse.HostelManagementSystem.entity.Student;
-import lk.ijse.HostelManagementSystem.repository.DAOFactory;
-import lk.ijse.HostelManagementSystem.repository.custom.ReservationDAO;
-import lk.ijse.HostelManagementSystem.repository.custom.RoomDAO;
-import lk.ijse.HostelManagementSystem.repository.custom.StudentDAO;
+import lk.ijse.HostelManagementSystem.DAO.DAOFactory;
+import lk.ijse.HostelManagementSystem.DAO.custom.ReservationDAO;
+import lk.ijse.HostelManagementSystem.DAO.custom.RoomDAO;
+import lk.ijse.HostelManagementSystem.DAO.custom.StudentDAO;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -3,8 +3,8 @@ package lk.ijse.HostelManagementSystem.BO.custom.impl;
 import lk.ijse.HostelManagementSystem.BO.custom.UserBO;
 import lk.ijse.HostelManagementSystem.dto.UserDTO;
 import lk.ijse.HostelManagementSystem.entity.User;
-import lk.ijse.HostelManagementSystem.repository.DAOFactory;
-import lk.ijse.HostelManagementSystem.repository.custom.UserDAO;
+import lk.ijse.HostelManagementSystem.DAO.DAOFactory;
+import lk.ijse.HostelManagementSystem.DAO.custom.UserDAO;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,7 @@
-package lk.ijse.HostelManagementSystem.repository.custom;
+package lk.ijse.HostelManagementSystem.DAO.custom;
 
 import lk.ijse.HostelManagementSystem.entity.Reservation;
-import lk.ijse.HostelManagementSystem.repository.CrudDAO;
+import lk.ijse.HostelManagementSystem.DAO.CrudDAO;
 
 
 import java.util.List;
