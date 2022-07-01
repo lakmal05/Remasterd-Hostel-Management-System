@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="remainingKeyMoneyContext" prefHeight="510.0" prefWidth="807.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HostelManagementSystem.controller.RemainKeyMoneyStudentFormController">
+   <children>
+      <Label layoutX="227.0" layoutY="33.0" text=" Remaining KeyMoney" textFill="BLUE">
+         <font>
+            <Font name="Consolas Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="56.0" fitWidth="42.0" layoutX="24.0" layoutY="26.0" onMouseClicked="#backToDashBoardOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assests/images/home-icon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDate" layoutX="663.0" layoutY="14.0" text="Date :2022-11-05" textFill="RED">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="687.0" layoutY="39.0" text="Time:10.30.00" textFill="RED">
+         <font>
+            <Font name="Consolas Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="16.0" layoutY="78.0" prefHeight="5.0" prefWidth="772.0" />
+      <TableView fx:id="tblRemainingKeyMoney" layoutX="19.0" layoutY="111.0" prefHeight="366.0" prefWidth="764.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="84.0" text="Student ID" />
+            <TableColumn fx:id="colName" prefWidth="164.0" text="Name" />
+            <TableColumn fx:id="colContactNO" prefWidth="95.0" text="Contact No" />
+            <TableColumn fx:id="colRegNo" text="Reg ID" />
+            <TableColumn fx:id="colRoomTypeID" prefWidth="100.0" text="RoomTypeID" />
+            <TableColumn fx:id="colDate" prefWidth="97.0" text="Date" />
+            <TableColumn fx:id="colRemainingMoney" prefWidth="143.0" text="Remaining money" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

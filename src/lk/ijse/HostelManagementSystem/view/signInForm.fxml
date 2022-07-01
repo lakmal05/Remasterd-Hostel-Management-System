@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="registerContext" prefHeight="567.0" prefWidth="376.0" stylesheets="@assests/styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HostelManagementSystem.controller.SignInFormController">
+   <children>
+      <Label layoutX="26.0" layoutY="21.0" prefHeight="36.0" prefWidth="156.0" text="Register" textFill="BLUE">
+         <font>
+            <Font name="Consolas Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="29.0" layoutY="75.0" prefHeight="3.0" prefWidth="336.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Separator>
+      <JFXButton fx:id="btnRegister" buttonType="RAISED" layoutX="34.0" layoutY="446.0" onAction="#btnRegisterOnAction" prefHeight="43.0" prefWidth="268.0" styleClass="update" text="Register" textFill="WHITE">
+         <font>
+            <Font name="Georgia Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="14.0" layoutY="536.0" text="Alredy Have an Account" />
+      <Label layoutX="152.0" layoutY="534.0" onMouseClicked="#backToLogInOnAction" text="LogIn" textAlignment="CENTER" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="276.0" text="You can use letters,numbers &amp; underscore" textFill="#686868">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="376.0" prefHeight="19.0" prefWidth="296.0" text="Use minimum 4 characters and maximum 8 characters " textFill="#686868" />
+      <Label layoutX="43.0" layoutY="357.0" prefHeight="19.0" prefWidth="243.0" text="with a mix of letters &amp; numbers " textFill="#686868" />
+      <JFXCheckBox fx:id="chkPasswordShowOrHide" checkedColor="BLACK" layoutX="50.0" layoutY="404.0" onMouseClicked="#chkPasswordShowOrHideMouseClickedOnAction" text="Show Password" />
+      <AnchorPane layoutX="38.0" layoutY="87.0" prefHeight="36.0" prefWidth="268.0" styleClass="textPane">
+         <children>
+            <JFXTextField fx:id="txtEmail" focusColor="#4f0000" layoutX="13.0" layoutY="4.0" onKeyReleased="#textFields_Key_Released" prefHeight="36.0" prefWidth="243.0" promptText="Email" styleClass="textField" unFocusColor="#4f0000" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="38.0" layoutY="151.0" prefHeight="36.0" prefWidth="268.0" styleClass="textPane">
+         <children>
+            <JFXTextField fx:id="txtFullName" focusColor="#4f0000" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="36.0" prefWidth="243.0" promptText="FullName" styleClass="textField" unFocusColor="#4f0000" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="43.0" layoutY="218.0" prefHeight="43.0" prefWidth="268.0" styleClass="textPane">
+         <children>
+            <JFXTextField fx:id="txtUserName" focusColor="#4f0000" layoutX="13.0" layoutY="10.0" onKeyReleased="#textFields_Key_Released" prefHeight="36.0" prefWidth="243.0" promptText="UserName" styleClass="textField" unFocusColor="#4f0000" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="38.0" layoutY="312.0" prefHeight="42.0" prefWidth="268.0" styleClass="textPane">
+         <children>
+            <JFXTextField fx:id="txtPW" focusColor="#4f0000" layoutX="13.0" layoutY="14.0" onKeyReleased="#textFields_Key_Released" prefHeight="27.0" prefWidth="243.0" styleClass="textField" unFocusColor="#4f0000">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="pwdPassword" focusColor="#4f0000" layoutX="13.0" layoutY="14.0" onKeyReleased="#textFields_Key_Released" prefHeight="27.0" prefWidth="243.0" promptText="Password" styleClass="textField" unFocusColor="#4f0000">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
