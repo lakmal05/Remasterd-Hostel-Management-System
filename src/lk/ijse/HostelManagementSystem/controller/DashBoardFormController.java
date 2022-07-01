@@ -37,7 +37,7 @@ public class DashBoardFormController {
                     lblDescription.setText("Click to add, update, delete, search or view rooms");
                     break;
                 case "imgSearchRegistration":
-                    lblMenu.setText("Search Registration");
+                    lblMenu.setText("Registration Search");
                     lblDescription.setText("Click if you want to search registrations");
                     break;
                 case "imgRemainKeyMoney":

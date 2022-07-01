@@ -15,6 +15,7 @@ public class RoomBOImpl implements RoomBO {
 
     @Override
     public List<RoomDTO> getAllRooms() throws Exception {
+
         List<Room> all = roomDAO.findAll();
         List<RoomDTO> allRooms = new ArrayList<>();
         for (Room room:all) {
