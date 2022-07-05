@@ -22,6 +22,7 @@ public class RoomDAOImpl implements RoomDAO {
         return true;
     }
 
+
     @Override
     public boolean update(Room entity) throws Exception {
         Session session = FactoryConfiguration.getInstance().getSession();
